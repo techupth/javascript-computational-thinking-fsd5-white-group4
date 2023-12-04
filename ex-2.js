@@ -88,4 +88,7 @@ for (let i = 0; i < orders.length; i++) {
       sumJCBpaidPrice + orders[i].productPrice * orders[i].productQuantity;
   }
 }
-console.log(`Paid by JCB credit card amount: (${sumJCBpaidPrice} Baht)`);
+const formattedSumJCBpaidPrice = sumJCBpaidPrice.toLocaleString("en-US");
+console.log(
+  `Paid by JCB credit card amount: (${formattedSumJCBpaidPrice} Baht)`
+);

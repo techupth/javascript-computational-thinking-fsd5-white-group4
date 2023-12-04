@@ -91,6 +91,7 @@ for (let i = 0; i < orders.length; i++) {
     highestOrderID = orders[i].id;
   }
 }
+const formattedHighestPrice = highestPrice.toLocaleString("en-US");
 console.log(
-  `The most expensive order is order id ${highestOrderID} (${highestPrice} Baht) `
+  `The most expensive order is order id ${highestOrderID} (${formattedHighestPrice} Baht) `
 );

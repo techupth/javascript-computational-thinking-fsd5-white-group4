@@ -86,5 +86,5 @@ for (let i = 0; i < orders.length; i++) {
   sumProductPrice =
     sumProductPrice + orders[i].productPrice * orders[i].productQuantity;
 }
-
-console.log(`Total amount of the orders: ${sumProductPrice} Baht`);
+const formattedSumProductPrice = sumProductPrice.toLocaleString("en-US");
+console.log(`Total amount of the orders: ${formattedSumProductPrice} Baht`);

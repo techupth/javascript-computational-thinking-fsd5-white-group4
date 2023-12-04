@@ -88,4 +88,7 @@ for (let i = 0; i < orders.length; i++) {
       netBirdieCart + orders[i].productPrice * orders[i].productQuantity;
   }
 }
-console.log(`Total paid amount of Birdie Shepland: ${netBirdieCart} Baht`);
+const formattedNetBirdieCart = netBirdieCart.toLocaleString("en-US");
+console.log(
+  `Total paid amount of Birdie Shepland: ${formattedNetBirdieCart} Baht`
+);

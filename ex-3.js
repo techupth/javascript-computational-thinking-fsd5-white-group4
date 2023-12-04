@@ -81,4 +81,14 @@ let orders = [
   },
 ];
 
-// Start coding here
+let netBirdieCart = 0;
+for (let i = 0; i < orders.length; i++) {
+  if (orders[i].customerName === "Birdie Shepland") {
+    netBirdieCart =
+      netBirdieCart + orders[i].productPrice * orders[i].productQuantity;
+  }
+}
+const formattedNetBirdieCart = netBirdieCart.toLocaleString("en-US");
+console.log(
+  `Total paid amount of Birdie Shepland: ${formattedNetBirdieCart} Baht`
+);
